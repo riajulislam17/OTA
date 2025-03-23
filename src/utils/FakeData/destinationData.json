@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Beach Sunset",
+    "location": "Maldives",
+    "image": "https://avada.website/tour-operator/wp-content/uploads/sites/169/2022/06/maldives-tour.jpg",
+    "rating": 4.5
+  },
+  {
+    "id": 2,
+    "title": "Mountain Adventure",
+    "location": "Switzerland",
+    "image": "https://www.marveltours.in/frontend/new/images/kerala.jpg",
+    "rating": 4.7
+  },
+  {
+    "id": 3,
+    "title": "City Lights",
+    "location": "New York",
+    "image": "https://img.freepik.com/free-photo/travel-concept-with-landmarks_23-2149153256.jpg",
+    "rating": 4.2
+  },
+  {
+    "id": 4,
+    "title": "Desert Landscape",
+    "location": "Dubai",
+    "image": "https://northbengaltourism.com/images/holiday/portrait/darjeeling.webp",
+    "rating": 4.8
+  }
+]

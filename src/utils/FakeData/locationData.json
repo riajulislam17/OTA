@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": "Head Office",
+    "location": "House-21/4/A, (IFIC Bank), Level-3, Zigatola Bus-Stand, Dhanmondi.",
+    "phone": "+880 1811-667722",
+    "email": "dhaka@hazetrip.com"
+  },
+  {
+    "id": 2,
+    "title": "Chittagong Office",
+    "location": "House-21/4/A, (IFIC Bank), Level-3, Zigatola Bus-Stand, Dhanmondi.",
+    "phone": "+880 1811-667722",
+    "email": "dhaka@hazetrip.com"
+  },
+  {
+    "id": 3,
+    "title": "Feni Office",
+    "location": "House-21/4/A, (IFIC Bank), Level-3, Zigatola Bus-Stand, Dhanmondi.",
+    "phone": "+880 1811-667722",
+    "email": "dhaka@hazetrip.com"
+  },
+  {
+    "id": 4,
+    "title": "Hotline",
+    "phone": "+880 1811-667722",
+    "email": "dhaka@hazetrip.com"
+  }
+]

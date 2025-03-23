@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "Bangladesh Airlines",
+    "logo": "https://w7.pngwing.com/pngs/1011/878/png-transparent-biman-airlines-classic-hd-logo.png"
+  },
+  {
+    "id": 2,
+    "name": "Novoair",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDJ3mZPVQg3zOv6FnEdLBOhGSrYWmodaRFxyle_N3qgGoKtntz6OgzipH6qjk17UY05Q&usqp=CAU"
+  },
+  {
+    "id": 3,
+    "name": "US-Bangla Airlines",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD1ESEuAr78N3ZHWCefYm0_AKv6iRMBVBSC6Li1fznRJplX3iLIs48e5T6f-Pghk6tmA&usqp=CAU"
+  },
+  {
+    "id": 4,
+    "name": "Etihad Airways",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Etihad-airways-logo.svg/2560px-Etihad-airways-logo.svg.png"
+  },
+  {
+    "id": 5,
+    "name": "Malaysia Airlines",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtTSXsJbaP4oqP-r9hb5mpPz-rX_cq2Sh5d0c0db4mx-HGgAntaZDITntoGZz8KP9gviw&usqp=CAU"
+  },
+  {
+    "id": 6,
+    "name": "Singapore Airlines",
+    "logo": "https://1000logos.net/wp-content/uploads/2020/04/Singapore-Airlines-Logo.png"
+  },
+  {
+    "id": 7,
+    "name": "Turkish Airlines",
+    "logo": "https://logowik.com/content/uploads/images/thy-turkish-airlines-new6886.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Qatar Airways",
+    "logo": "https://airhex.com/images/airline-logos/alt/qatar-airways.png"
+  },
+  {
+    "id": 9,
+    "name": "Air Astra",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/51/Air_Astra_Logo.svg/2560px-Air_Astra_Logo.svg.png"
+  },
+  {
+    "id": 10,
+    "name": "US-Bangla Airlines",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD1ESEuAr78N3ZHWCefYm0_AKv6iRMBVBSC6Li1fznRJplX3iLIs48e5T6f-Pghk6tmA&usqp=CAU"
+  }
+]

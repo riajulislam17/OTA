@@ -1,0 +1,47 @@
+[
+  {
+    "code": "JFK",
+    "name": "John F. Kennedy International Airport",
+    "location": "New York"
+  },
+  {
+    "code": "LAX",
+    "name": "Los Angeles International Airport",
+    "location": "Los Angeles"
+  },
+  {
+    "code": "ORD",
+    "name": "O'Hare International Airport",
+    "location": "Chicago"
+  },
+  {
+    "code": "ATL",
+    "name": "Hartsfield-Jackson Atlanta International Airport",
+    "location": "Atlanta"
+  },
+  {
+    "code": "SFO",
+    "name": "San Francisco International Airport",
+    "location": "San Francisco"
+  },
+  {
+    "code": "SEA",
+    "name": "Seattle-Tacoma International Airport",
+    "location": "Seattle"
+  },
+  {
+    "code": "MIA",
+    "name": "Miami International Airport",
+    "location": "Miami"
+  },
+  {
+    "code": "DAC",
+    "location": "Dhaka",
+    "name": "Hazrat Shahjalal International Airport"
+  },
+  {
+    "code": "LCY",
+    "location": "London",
+    "name": "London City Airport"
+  }
+]

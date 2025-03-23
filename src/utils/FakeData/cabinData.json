@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "label": "Economy",
+    "value": "economy"
+  },
+  {
+    "id": 2,
+    "label": "Premium Economy",
+    "value": "premium-economy"
+  },
+  {
+    "id": 3,
+    "label": "Business",
+    "value": "business"
+  },
+  {
+    "id": 4,
+    "label": "First Class",
+    "value": "first-class"
+  }
+]
