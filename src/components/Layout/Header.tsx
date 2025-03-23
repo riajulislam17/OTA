@@ -10,6 +10,7 @@ function Header() {
         style={{
           backgroundImage: "url(../banner-2.png)",
           backgroundRepeat: "no-repeat",
+          backgroundSize:'cover'
         }}
       >
         <Hero />
