@@ -29,7 +29,7 @@ const DateSelector: React.FC<DateSelectorProps> = ({
   };
 
   const { day, monthYear, weekday } = formatDate(value);
-
+console.log('showPicker', showPicker)
   return (
     <div className="relative w-full">
       {/* Label + Calendar Icon */}

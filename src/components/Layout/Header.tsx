@@ -21,7 +21,7 @@ function Header() {
             Welcome to Hazetrip
           </p>
           <p className="text-4xl md:text-5xl lg:text-6xl text-[#062727] font-Outfit font-bold uppercase">
-            Let's travel the
+            {"Let's travel the"}
           </p>
           <p className="text-4xl md:text-5xl lg:text-6xl text-[#062727] font-Outfit font-bold uppercase">
             world with us

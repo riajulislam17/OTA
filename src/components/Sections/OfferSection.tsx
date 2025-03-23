@@ -27,7 +27,7 @@ function OfferSection() {
             className="flex transition-transform duration-500 ease-in-out"
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
           >
-            {offers.map((offer, index) => (
+            {offers.map((offer) => (
               <div
                 key={offer.id}
                 className="w-full md:w-1/2 px-2 flex-shrink-0"

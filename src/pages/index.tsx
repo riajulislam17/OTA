@@ -1,5 +1,3 @@
-import Image from "next/image";
-import localFont from "next/font/local";
 import OfferSection from "@/components/Sections/OfferSection";
 import AirlineList from "@/components/Sections/AirlineList";
 import DestinationList from "@/components/Sections/DestinationList";

@@ -11,8 +11,10 @@ function MultiCity({
   travelerCounts,
   selectedCabin,
 }: {
-  travelerCounts: any;
-  selectedCabin: any;
+  travelerCounts: {
+    [key: string]: number;
+  };
+  selectedCabin: string;
 }) {
   const initialFlight = {
     from: {
@@ -30,13 +32,21 @@ function MultiCity({
   const handleChange = (
     index: number,
     field: "from" | "to" | "departureDate",
-    value: any
+    value: Airport | string
   ) => {
+    // console.log("value", value);
     const updatedFlights = [...flights];
-    updatedFlights[index][field] = value;
+    if (field === "departureDate" && typeof value === "string") {
+      updatedFlights[index][field] = value;
+    } else if (
+      (field === "from" || field === "to") &&
+      typeof value !== "string"
+    ) {
+      updatedFlights[index][field] = value;
+    }
     setFlights(updatedFlights);
   };
-
+  // console.log("flights", flights);
   const handleAddFlight = () => {
     setFlights([...flights, { ...initialFlight }]);
   };
@@ -117,7 +127,9 @@ function MultiCity({
                     label="From"
                     icon={<MdFlightTakeoff />}
                     value={flight.from}
-                    onChange={(value) => handleChange(index, "from", value)}
+                    onChange={(value) =>
+                      value && handleChange(index, "from", value)
+                    }
                   />
                 </div>
 
@@ -138,7 +150,9 @@ function MultiCity({
                     label="To"
                     icon={<MdFlightLand />}
                     value={flight.to}
-                    onChange={(value) => handleChange(index, "to", value)}
+                    onChange={(value) =>
+                      value && handleChange(index, "to", value)
+                    }
                   />
                 </div>
                 {/* Departure Date */}

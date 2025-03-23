@@ -1,6 +1,6 @@
 import React from "react";
 import locations from "../../utils/FakeData/locationData.json";
-import { FaDiscord, FaFacebook, FaLinkedin, FaPinterest } from "react-icons/fa";
+import { FaDiscord, FaFacebook, FaLinkedin } from "react-icons/fa";
 import { FaPhoneVolume, FaSquareXTwitter } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
@@ -11,7 +11,7 @@ function Footer() {
         {/* Locations */}
         <div className="py-24">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-white text-[16px] bg-[#FFFFFF1A] p-5 rounded-xl">
-            {locations.map((item, index) => (
+            {locations.map((item) => (
               <div key={item.id}>
                 <h1 className="font-semibold text-2xl my-3">{item.title}</h1>
                 <p className="my-3">{item.location}</p>

@@ -20,10 +20,10 @@ function RoundTrip() {
     name: "London City Airport",
   });
 
-  const [departureDate, setDepartureDate] = useState(
+  const [departureDate, setDepartureDate] = useState<string>(
     new Date().toISOString().split("T")[0]
   );
-  const [returnDate, setReturnDate] = useState(
+  const [returnDate, setReturnDate] = useState<string>(
     new Date().toISOString().split("T")[0]
   );
 
@@ -37,11 +37,11 @@ function RoundTrip() {
   });
   const [selectedCabin, setSelectedCabin] = useState("economy");
 
-  const handleSwap = () => {
-    // Swap the from and to values
-    setFrom(to);
-    setTo(from);
-  };
+  // const handleSwap = () => {
+  //   // Swap the from and to values
+  //   setFrom(to);
+  //   setTo(from);
+  // };
 
   const renderPopupContent = () => (
     <div className="space-y-4">
