@@ -9,7 +9,6 @@ function Header() {
       <div
         style={{
           backgroundImage: "url(../banner-2.png)",
-          backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
         }}
       >

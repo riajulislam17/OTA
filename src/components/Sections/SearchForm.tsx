@@ -106,7 +106,7 @@ function SearchForm() {
                     {tabs.map((tab) => (
                       <button
                         key={tab.value}
-                        className={`py-2 px-2 md:px-5 lg:px-8 rounded-lg text-[1rem] whitespace-nowrap transition-colors duration-300 flex items-center gap-2 ${
+                        className={`py-2 px-2 md:px-5 lg:px-8 rounded-lg text-[.7rem] md:text-[1rem] whitespace-nowrap transition-colors duration-300 flex items-center gap-2 ${
                           activeTab === tab.value
                             ? "bg-[#126930] text-white"
                             : "bg-[#E7F3E7] text-[#126930]"
