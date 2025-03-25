@@ -66,12 +66,12 @@ const LocationInput: React.FC<LocationInputProps> = ({
       >
         {!isTyping && value ? (
           <>
-            <div className="border-r border-black pr-3 font-bold">
+            <div className="border-r border-black pr-3 font-[400px] font-outfit text-[16px]">
               {value.code}
             </div>
             <div>
-              {value.location}
-              <p className="text-sm">{value.name}</p>
+              <p className="font-[400px] font-outfit text-[14px]">{value.location}</p>
+              <p className="font-[400px] font-outfit text-[12px] text-[#062727]">{value.name}</p>
             </div>
           </>
         ) : (

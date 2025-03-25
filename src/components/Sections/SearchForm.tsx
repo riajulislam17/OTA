@@ -56,7 +56,7 @@ function SearchForm() {
             {options.map((item) => (
               <button
                 key={item.value}
-                className={`shadow py-4 px-8 rounded-lg border ${
+                className={`shadow py-[10px] px-4 rounded-lg border ${
                   activeOption === item.value
                     ? "bg-[#69AF08] text-white"
                     : "bg-white text-black"

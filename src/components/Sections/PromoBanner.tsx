@@ -1,4 +1,5 @@
 import React from "react";
+import { IoIosArrowDroprightCircle } from "react-icons/io";
 
 function PromoBanner() {
   return (
@@ -12,7 +13,9 @@ function PromoBanner() {
 
         <div className="absolute bottom-10 md:bottom-28 lg:bottom-40 left-1/2 transform -translate-x-1/2">
           <button className="bg-[#69AF08] text-white px-6 py-3 rounded-3xl font-semibold shadow-md hover:bg-[#5C9C06] transition">
-            Booking Now
+            <span className="flex items-center gap-3">
+              Booking Now <IoIosArrowDroprightCircle />
+            </span>
           </button>
         </div>
       </div>

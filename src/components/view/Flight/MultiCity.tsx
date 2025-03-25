@@ -6,6 +6,7 @@ import { GiCommercialAirplane } from "react-icons/gi";
 import { GoPlus } from "react-icons/go";
 import { RxCrossCircled } from "react-icons/rx";
 import ConfirmationPopup from "@/components/FormFields/ConfirmationPopup";
+import { VscArrowSwap } from "react-icons/vsc";
 
 function MultiCity({
   travelerCounts,
@@ -110,6 +111,16 @@ function MultiCity({
     </div>
   );
 
+  const handleSwap = (index: number) => {
+    setFlights((prevFlights) =>
+      prevFlights.map((flight, i) =>
+        i === index
+          ? { ...flight, from: flight.to, to: flight.from } // Swap locations
+          : flight
+      )
+    );
+  };
+
   return (
     <>
       <div>
@@ -120,41 +131,41 @@ function MultiCity({
           >
             {/* Flight Details Grid */}
             <div className="w-full md:w-11/12">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-4 items-center">
-                {/* From Location */}
-                <div className="relative flex flex-col h-full">
-                  <LocationInput
-                    label="From"
-                    icon={<MdFlightTakeoff />}
-                    value={flight.from}
-                    onChange={(value) =>
-                      value && handleChange(index, "from", value)
-                    }
-                  />
+              <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-2 md:gap-4 items-center">
+                <div className="relative w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+                  {/* From Location */}
+                  <div className="flex-1 flex flex-col">
+                    <LocationInput
+                      label="From"
+                      icon={<MdFlightTakeoff />}
+                      value={flight.from}
+                      onChange={(value) =>
+                        value && handleChange(index, "from", value)
+                      }
+                    />
+                  </div>
+
+                  {/* Swap Icon - Clickable Without Gap */}
+                  <button
+                    className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center rounded-full border border-[#E5E7EB] z-10 font-thin bg-white rotate-90 md:rotate-0"
+                    onClick={() => handleSwap(index)}
+                  >
+                    <VscArrowSwap size={24} />
+                  </button>
+
+                  {/* To Location */}
+                  <div className="flex-1 flex flex-col">
+                    <LocationInput
+                      label="To"
+                      icon={<MdFlightLand />}
+                      value={flight.to}
+                      onChange={(value) =>
+                        value && handleChange(index, "to", value)
+                      }
+                    />
+                  </div>
                 </div>
 
-                {/* Swap Icon */}
-                {/* <div
-                className="rounded-full p-3 bg-red-400 cursor-pointer border absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-                onClick={() =>
-                  handleChange(index, "from", flight.to) ||
-                  handleChange(index, "to", flight.from)
-                }
-              >
-                <FaExchangeAlt size={20} />
-              </div> */}
-
-                {/* To Location */}
-                <div className="relative flex flex-col h-full">
-                  <LocationInput
-                    label="To"
-                    icon={<MdFlightLand />}
-                    value={flight.to}
-                    onChange={(value) =>
-                      value && handleChange(index, "to", value)
-                    }
-                  />
-                </div>
                 {/* Departure Date */}
                 <div className="flex items-center justify-between border rounded-lg p-4 h-full">
                   <DateSelector

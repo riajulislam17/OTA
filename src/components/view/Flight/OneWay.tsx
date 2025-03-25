@@ -7,6 +7,7 @@ import CabinSelector from "../../FormFields/CabinSelector";
 import TravelerSelector from "../../FormFields/TravelerSelector";
 import { GiCommercialAirplane } from "react-icons/gi";
 import ConfirmationPopup from "@/components/FormFields/ConfirmationPopup";
+import { VscArrowSwap } from "react-icons/vsc";
 
 function OneWay({ setActiveTab }: { setActiveTab: (value: "return") => void }) {
   const [open, setOpen] = useState(false);
@@ -34,11 +35,11 @@ function OneWay({ setActiveTab }: { setActiveTab: (value: "return") => void }) {
   });
   const [selectedCabin, setSelectedCabin] = useState("economy");
 
-  // const handleSwap = () => {
-  //   // Swap the from and to values
-  //   setFrom(to);
-  //   setTo(from);
-  // };
+  const handleSwap = () => {
+    // Swap the from and to values
+    setFrom(to);
+    setTo(from);
+  };
 
   const renderPopupContent = () => (
     <div className="space-y-4">
@@ -90,72 +91,80 @@ function OneWay({ setActiveTab }: { setActiveTab: (value: "return") => void }) {
 
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-        {/* From Location */}
-        <div className="relative flex flex-col h-full">
-          <LocationInput
-            label="From"
-            icon={<MdFlightTakeoff />}
-            value={from}
-            onChange={setFrom}
-          />
-        </div>
-
-        {/* Swap Icon */}
-        {/* <div
-          className="rounded-full p-3 bg-red-400 cursor-pointer border absolute top-1/2 rotate-90 md:rotate-0 sm:translate-x-0 left-1/4 sm:right-auto  transform"
-          onClick={handleSwap}
-        >
-          <FaExchangeAlt size={24} />
-        </div> */}
-
-        {/* To Location */}
-        <div className="relative flex flex-col h-full">
-          <LocationInput
-            label="To"
-            icon={<MdFlightLand />}
-            value={to}
-            onChange={setTo}
-          />
-        </div>
-
-        <div className="border rounded-lg px-4 flex justify-between items-center gap-8 h-full">
-          {/* Departure Date */}
-          <DateSelector
-            label="Departure"
-            value={departureDate}
-            onChange={setDepartureDate}
-          />
-
-          <div>
-            <button
-              className="flex items-center gap-3 whitespace-nowrap md:text-[0.9rem] text-lg"
-              onClick={() => setActiveTab("return")}
-            >
-              <CiCirclePlus /> Add Return
-            </button>
-          </div>
-        </div>
-
-        <div className="flex flex-col gap-4">
-          <div className="border rounded-lg px-4 py-3 flex items-center gap-3">
-            <TravelerSelector
-              traveler={travelerCounts}
-              onTravelerChange={setTravelerCounts}
+      <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4">
+        {/* From & To Section - Full Height */}
+        <div className="relative w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+          {/* From Location */}
+          <div className="flex-1 flex flex-col">
+            <LocationInput
+              label="From"
+              icon={<MdFlightTakeoff />}
+              value={from}
+              onChange={setFrom}
             />
           </div>
 
-          <div className="border rounded-lg px-4 py-3 flex items-center gap-3">
-            <CabinSelector
-              selectedCabin={selectedCabin}
-              onChange={setSelectedCabin}
+          {/* Swap Icon - Clickable Without Gap */}
+          <button
+            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center rounded-full border border-[#E5E7EB] z-10 font-thin bg-white rotate-90 md:rotate-0"
+            onClick={handleSwap}
+          >
+            <VscArrowSwap size={24} />
+          </button>
+
+          {/* To Location */}
+          <div className="flex-1 flex flex-col">
+            <LocationInput
+              label="To"
+              icon={<MdFlightLand />}
+              value={to}
+              onChange={setTo}
             />
+          </div>
+        </div>
+
+        {/* Departure Section */}
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+          <div className="border rounded-lg p-4 flex justify-between items-center gap-8 min-h-full">
+            {/* Departure Date */}
+            <DateSelector
+              label="Departure"
+              value={departureDate}
+              onChange={setDepartureDate}
+            />
+            <div>
+              <button
+                className="flex items-center gap-3 whitespace-nowrap md:text-[0.9rem] text-lg"
+                onClick={() => setActiveTab("return")}
+              >
+                <CiCirclePlus /> Add Return
+              </button>
+            </div>
+          </div>
+
+          {/* Traveler & Cabin Section */}
+          <div className="flex flex-col gap-4 min-h-full">
+            <div className="border rounded-lg px-4 py-3 flex items-center gap-3">
+              <TravelerSelector
+                traveler={travelerCounts}
+                onTravelerChange={setTravelerCounts}
+              />
+            </div>
+            <div className="border rounded-lg px-4 py-3 flex items-center gap-3">
+              <CabinSelector
+                selectedCabin={selectedCabin}
+                onChange={setSelectedCabin}
+              />
+            </div>
           </div>
         </div>
       </div>
 
       <div className="flex justify-center items-center mt-8">
-        <button className="py-2 px-8 bg-[#126930] rounded text-white font-semibold flex items-center gap-3" onClick={() => setOpen(true)}>
+        <button
+          className="py-2 px-8 bg-[#126930] rounded text-white font-semibold flex items-center gap-3"
+          onClick={() => setOpen(true)}
+        >
           Search Flight <GiCommercialAirplane />
         </button>
       </div>

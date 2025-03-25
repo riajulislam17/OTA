@@ -5,11 +5,11 @@ function DestinationList() {
   return (
     <>
       <div className="px-10 md:px-20 lg:px-40 py-24">
-        <div className="text-center text-3xl md:text-5xl font-semibold">
+        <div className="text-center text-3xl md:text-[60px] font-semibold font-outfit">
           Popular Destination
         </div>
 
-        <p className="text-center my-5">
+        <p className="text-center my-5 text-[16px] font-outfit">
           Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed
           suscipit.
         </p>
@@ -42,7 +42,7 @@ function DestinationList() {
           ))}
         </div>
 
-        <p className="text-center mt-8">
+        <p className="text-center mt-8 text-[16px] font-outfit">
           Where will your next journey take you? Find your dream destination
           with Bavro! Explore More Destinations
         </p>

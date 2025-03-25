@@ -17,7 +17,7 @@ function OfferSection() {
   return (
     <>
       <div className="px-10 md:px-20 lg:px-40 py-24">
-        <div className="text-center text-3xl md:text-5xl">
+        <div className="text-center text-3xl md:text-[60px] font-outfit">
           Exclusive <span className="font-semibold text-[#062727]">Offer</span>
         </div>
 

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes, FaUser } from "react-icons/fa";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +25,7 @@ function Navbar() {
         {/* Partner Login Button */}
         <div className="text-end">
           <button className="rounded text-white bg-[#69AF08] py-2 px-8 font-semibold">
-            PARTNER LOGIN
+          <span className="flex items-center gap-3"><FaUser /> PARTNER LOGIN</span>
           </button>
         </div>
       </div>
@@ -34,8 +34,8 @@ function Navbar() {
       <div className="hidden md:flex lg:hidden flex-col items-center">
         <div className="flex justify-between w-full items-center">
           <img src="../navbar.png" alt="logo" className="h-10 object-contain" />
-          <button className="rounded text-white bg-[#69AF08] py-2 px-6 font-semibold">
-            PARTNER LOGIN
+          <button className="rounded text-white bg-[#69AF08] py-2 px-6 font-semibold flex items-center gap-3">
+          <span className="flex items-center gap-3"><FaUser /> PARTNER LOGIN</span>
           </button>
         </div>
         <div className="flex justify-center gap-6 mt-3 text-lg font-medium">
@@ -66,7 +66,7 @@ function Navbar() {
           <a href="#">Blog</a>
           <a href="#">Contact</a>
           <button className="rounded text-white bg-[#69AF08] py-2 px-6 font-semibold">
-            PARTNER LOGIN
+          <span className="flex items-center gap-3"><FaUser /> PARTNER LOGIN</span>
           </button>
         </div>
       )}

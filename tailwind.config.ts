@@ -12,6 +12,10 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        outfit: ["Outfit", "sans-serif"],
+        kaushan: ["Kaushan Script"],
+      },
     },
   },
   plugins: [],

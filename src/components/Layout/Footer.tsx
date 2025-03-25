@@ -16,24 +16,30 @@ function Footer() {
                 <h1 className="font-semibold text-2xl my-3">{item.title}</h1>
                 <p className="my-3">{item.location}</p>
                 <p className="my-3 flex items-center gap-3">
-                  <FaPhoneVolume /> {item.phone}
+                  <span className="text-[#69AF08]">
+                    <FaPhoneVolume />
+                  </span>{" "}
+                  {item.phone}
                 </p>
                 <p className="my-3 flex items-center gap-3">
-                  <MdEmail /> {item.email}
+                  <span className="text-[#69AF08]">
+                    <MdEmail />
+                  </span>{" "}
+                  {item.email}
                 </p>
               </div>
             ))}
           </div>
 
           {/* Menus */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-16 mt-10 text-white">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mt-10 text-white">
             <div>
               <img
                 src="../logo.png"
                 alt="logo"
-                className="mx-auto mb-4 h-20 object-contain"
+                className="mb-4 h-20 object-contain"
               />
-              <p className="text-justify text-white">
+              <p className=" text-white">
                 HazeTrip is the first one-stop online travel agency (OTA)
                 solution in Bangladesh. Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis,
@@ -41,80 +47,83 @@ function Footer() {
                 adipiscing elit.
               </p>
             </div>
-            {/* Useful Links */}
-            <div>
-              <h1 className="font-semibold text-lg my-4">Useful Links</h1>
-              <ul>
-                <li className="my-2">
-                  <a href="#">Travel Guide </a>
-                </li>
-                <li className="my-2">
-                  <a href="#">Travel Advisory </a>
-                </li>
-                <li className="my-2">
-                  <a href="#">Visa Guide </a>
-                </li>
-                <li className="my-2">
-                  <a href="#">Visa Application</a>
-                </li>
-              </ul>
-            </div>
-            {/* Service */}
-            <div>
-              <h1 className="font-semibold text-lg my-4">Service</h1>
-              <ul>
-                <li className="my-2">
-                  <a href="#">Flight</a>
-                </li>
-                <li className="my-2">
-                  <a href="#">Visa</a>
-                </li>
-                <li className="my-2">
-                  <a href="#">Holiday</a>
-                </li>
-                <li className="my-2">
-                  <a href="#">Visa</a>
-                </li>
-              </ul>
-            </div>
-            {/* Quick Menu */}
-            <div>
-              <h1 className="font-semibold text-lg my-4">Quick Menu</h1>
-              <ul>
-                <li className="my-2">
-                  <a href="#" className="my-2">
-                    About Us
-                  </a>
-                </li>
-                <li className="my-2">
-                  <a href="#" className="my-2">
-                    Terms & Conditions
-                  </a>
-                </li>
-                <li className="my-2">
-                  <a href="#" className="my-2">
-                    FAQ
-                  </a>
-                </li>
-                <li className="my-2">
-                  <a href="#" className="my-2">
-                    Hotel Sitemap
-                  </a>
-                </li>
-                <li className="my-2">
-                  <a href="#" className="my-2">
-                    Medical Tourism
-                  </a>
-                </li>
-              </ul>
+            {/* 2nd col */}
+            <div className="grid grid-cols-3 gap-5">
+              {/* Useful Links */}
+              <div>
+                <h1 className="font-semibold text-lg my-4">Useful Links</h1>
+                <ul>
+                  <li className="my-2">
+                    <a href="#">Travel Guide </a>
+                  </li>
+                  <li className="my-2">
+                    <a href="#">Travel Advisory </a>
+                  </li>
+                  <li className="my-2">
+                    <a href="#">Visa Guide </a>
+                  </li>
+                  <li className="my-2">
+                    <a href="#">Visa Application</a>
+                  </li>
+                </ul>
+              </div>
+              {/* Service */}
+              <div>
+                <h1 className="font-semibold text-lg my-4">Service</h1>
+                <ul>
+                  <li className="my-2">
+                    <a href="#">Flight</a>
+                  </li>
+                  <li className="my-2">
+                    <a href="#">Visa</a>
+                  </li>
+                  <li className="my-2">
+                    <a href="#">Holiday</a>
+                  </li>
+                  <li className="my-2">
+                    <a href="#">Visa</a>
+                  </li>
+                </ul>
+              </div>
+              {/* Quick Menu */}
+              <div>
+                <h1 className="font-semibold text-lg my-4">Quick Menu</h1>
+                <ul>
+                  <li className="my-2">
+                    <a href="#" className="my-2">
+                      About Us
+                    </a>
+                  </li>
+                  <li className="my-2">
+                    <a href="#" className="my-2">
+                      Terms & Conditions
+                    </a>
+                  </li>
+                  <li className="my-2">
+                    <a href="#" className="my-2">
+                      FAQ
+                    </a>
+                  </li>
+                  <li className="my-2">
+                    <a href="#" className="my-2">
+                      Hotel Sitemap
+                    </a>
+                  </li>
+                  <li className="my-2">
+                    <a href="#" className="my-2">
+                      Medical Tourism
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
 
-            <div>
+            <div className="">
               <h1 className="font-semibold text-lg my-4">We Accept</h1>
               <img
                 src="../payment.png"
                 alt="payments"
-                className=" h-48 object-contain"
+                className="h-48 object-contain"
               />
             </div>
           </div>

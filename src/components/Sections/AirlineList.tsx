@@ -5,11 +5,11 @@ function AirlineList() {
   return (
     <>
       <div className="px-10 md:px-20 lg:px-40 py-24 bg-[#E7F3E7]">
-        <div className="text-center text-3xl md:text-5xl font-semibold">
+        <div className="text-center text-3xl md:text-[60px] font-semibold font-outfit">
           Access to 750+ Airlines
         </div>
 
-        <p className="text-center my-5">
+        <p className="text-center my-5 text-[16px] font-outfit">
           Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed
           suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus
           sollicitudin. Quisque vitae sodales lectus.
