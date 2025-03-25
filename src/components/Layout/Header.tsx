@@ -6,10 +6,32 @@ import SearchForm from "../Sections/SearchForm";
 function Header() {
   return (
     <>
-      <style>
+      {/* <style>
         @import
-        url(`https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap`);
+        url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+      </style> */}
+      {/* <style>
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Outfit:wght@100..900&display=swap');
+</style> */}
+
+      <div
+        dangerouslySetInnerHTML={{
+          __html: `
+      <style>
+        @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
       </style>
+    `,
+        }}
+      />
+      <div
+        dangerouslySetInnerHTML={{
+          __html: `
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Outfit:wght@100..900&display=swap');
+      </style>
+    `,
+        }}
+      />
 
       <div
         style={{
@@ -28,13 +50,13 @@ function Header() {
           >
             Welcome to Hazetrip
           </p>
-          <p className="text-4xl md:text-5xl lg:text-[80px] text-[#062727] font-Outfit font-bold uppercase font-outfit">
+          <p className="text-4xl md:text-5xl lg:text-[80px] text-[#062727] font-Outfit font-bold uppercase font-outfit"  style={{ fontFamily: "outfit" }}>
             Lets travel the
           </p>
-          <p className="text-4xl md:text-5xl lg:text-[80px] text-[#062727] font-Outfit font-bold uppercase font-outfit">
+          <p className="text-4xl md:text-5xl lg:text-[80px] text-[#062727] font-Outfit font-bold uppercase font-outfit"  style={{ fontFamily: "outfit" }}>
             world with us
           </p>
-          <p className="text-sm md:text-base lg:text-lg mt-6 font-outfit">
+          <p className="text-sm md:text-base lg:text-lg mt-6 font-outfit"  style={{ fontFamily: "outfit" }}>
             Find awesome flights, hotels, tours, cars, and packages
           </p>
         </div>
